@@ -1,0 +1,9 @@
+#sidebar{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 180px;
+	height: calc(100% - 20px);
+	padding: 10px;
+	background-color: #eee;
+}
