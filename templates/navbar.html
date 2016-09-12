@@ -1,4 +1,30 @@
 <link rel="stylesheet" href="css/navbar.css">
 <div id="navbar" class="shadow">
 	<img src="img/banner.png">
+	<span id="mobile" onclick="toggleTabs()">
+		<i class="fa fa-bars" aria-hidden="true"></i>
+	</span>
+	<div id="tabs">
+		<div class="tab">
+			<a class="shadow" href="/">HOME</a>
+		</div>
+
+		<div class="tab">
+			<a class="shadow" href="/events">EVENTS</a>
+		</div>
+
+		<div class="tab">
+			<a class="shadow" href="/contact">CONTACT</a>
+		</div>
+
+		<div class="tab">
+			<a class="shadow" href="/people">PEOPLE</a>
+		</div>
+
+		<div class="tab">
+			<a class="shadow" id="twitch" href="http://twitch.tv/mitlolclub"><i class="fa fa-twitch" aria-hidden="true"></i> TWITCH</a>
+		</div>
+	</div>
 </div>
+
+<script src="js/navbar.js"></script>

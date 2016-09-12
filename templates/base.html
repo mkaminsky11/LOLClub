@@ -21,6 +21,7 @@
 		{% block header %}{% endblock %}
 	</head>
 	<body>
+		<div id="background"></div>
 		<div id="main">
 			<div id="center">
 			{% include 'navbar.html' %}
@@ -29,5 +30,7 @@
 			</div>
 			</div>
 		</div>
+		{% include 'themes.html' %}
+		<script src="js/index.js"></script>
 	</body>
 </html>
