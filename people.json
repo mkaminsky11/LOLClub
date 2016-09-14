@@ -1,0 +1,16 @@
+{
+	"people": [
+		{
+			"name": "Michael Kaminsky",
+			"mit": "kmichael",
+			"lol": "0ceal0t",
+			"champs": ["Azir","Vel'koz"]
+		},
+		{
+			"name": "John Doe",
+			"mit": "jdoe",
+			"lol": "xXxJohnDoexXx",
+			"champs": ["Wukong","Aurelion Sol","Kha'zix","Kled"]
+		}
+	]
+}

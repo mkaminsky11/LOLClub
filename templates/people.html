@@ -8,7 +8,23 @@
 <!--
 home events people contact twitch
 -->
-<h1>CARRY. DOMINATE. HAVE FUN!</h1>
-<h2>A place where MIT League of Legends players can gather whether they are new or experienced, competitive or casual. We make it easier for members to connect with each other, including forming teams and organizing tournaments.</h2>
+<h1>QUEUE UP</h1>
+<h2>We have members of all ranks, so you'll have someone to help you get out of Bronze.</h2>
+
+{% for person in people %}
+<div class="card shadow">
+	<div class="card-header">
+		<h3>{{ person.name }} <span>({{ person.lol }})</span></h3>
+	</div>
+	<div class="card-body">
+		<p><b>Email:</b>{{ person.mit }}@mit.edu</p>
+		<div class="person-champs">
+		{% for champ in person.champs %}
+			<img data-champ="{{ champ }}" class="champ">
+		{% endfor %}
+		</div>
+	</div>
+</div>
+{% endfor %}
 
 {% endblock %}

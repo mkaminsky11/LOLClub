@@ -11,3 +11,56 @@
 	font-weight: 500;
     font-size: 18px;
 }
+
+#body blockquote{
+	padding: 15px;
+    margin: 10px;
+    border-radius: 2px;
+    background-color: #eee;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.card{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.card-header{
+	padding: 10px;
+	width: calc(100% - 20px);
+	background-color: #eee;
+}
+
+.card-header h3{
+	margin: 0;
+}
+
+.card-body{
+	padding: 10px;
+	width: calc(100% - 20px);
+}
+
+.card-body p{
+	margin-top: 0;
+}
+
+.person-champs{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.person-champs img{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+#body a{
+	color: #80A8F8 !important;
+	font-weight: bold;
+}

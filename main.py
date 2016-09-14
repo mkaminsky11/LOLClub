@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+import json
  
 app = Flask(__name__)
  
@@ -8,7 +9,10 @@ def index(user=None):
 
 @app.route('/people')
 def people(user=None):
-    return render_template('people.html')
+	f = open('people.json', 'r')
+	json_raw = f.read()
+	json_decoded = json.loads(json_raw)
+	return render_template('people.html', people=json_decoded['people'])
 
 @app.route('/events')
 def events(user=None):

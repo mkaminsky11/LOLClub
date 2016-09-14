@@ -16,3 +16,10 @@ function toggleTabs(){
 		});
 	}
 }
+
+$(window).resize(function(){
+	var _h = $("#navbar").height() / 2;
+	$("#background").css("top",_h);
+});
+
+$("#body").velocity("transition.slideUpIn");

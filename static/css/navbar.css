@@ -1,16 +1,38 @@
 #navbar{
-	width: calc(100% - 20px);
-	padding: 10px;
+	width: calc(100% - 0px);
+	padding: 0px;
 	flex-wrap: wrap;
-	padding-top: 5px;
+	padding-top: px;
 	display: flex;
 	justify-content: center;
-	background-color: #eac75e;
+	position: relative;
+}
+
+#navbar svg{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+
+#navbar > *{
+	z-index: 3;
 }
 
 #navbar img{
 	height: 50px;
 	max-width: 100%;
+}
+
+#navbar #header{
+	background-color: #eac75e;
+	width: calc(100% - 20px);
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 #navbar #tabs{
@@ -34,12 +56,14 @@
 	padding: 5px;
     background-color: #525252;
     border-radius: 2px;
-    padding-left: 10px;
+    padding-left: 20px;
     color: #f1f1f1;
-    padding-right: 10px;
+    padding-right: 20px;
+    border-radius: 20px;
     border: solid 2px #525252;
     transition: border-color 0.5s ease;
     text-decoration: none;
+
 }
 
 #navbar #twitch{
@@ -49,7 +73,7 @@
 }
 
 #navbar .tab a:hover{
-	border-color: #eee;
+	border-color: #eac75e;
 }
 
 /*
