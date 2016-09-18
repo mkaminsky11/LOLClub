@@ -12,6 +12,12 @@
     font-size: 18px;
 }
 
+#body h6{
+	margin: 0;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
 #body blockquote{
 	padding: 15px;
     margin: 10px;
@@ -63,4 +69,10 @@
 #body a{
 	color: #80A8F8 !important;
 	font-weight: bold;
+}
+
+iframe{
+	width: 100%;
+    min-height: 400px;
+    border: none;
 }
