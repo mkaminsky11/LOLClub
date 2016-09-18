@@ -16,6 +16,6 @@ var themes = {
 $("#themes span").click(function(){
 	theme = themes[$(this).attr("data-theme")];
 	$("#background").css("background-image","url("+ theme.url +")");
-	$("#navbar").css("background-color", theme.color);
+	$("#header").css("background-color", theme.color);
 
 });
