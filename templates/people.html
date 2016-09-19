@@ -20,7 +20,10 @@ home events people contact twitch
 		<p><b>Email:</b>{{ person.mit }}@mit.edu</p>
 		<div class="person-champs">
 		{% for champ in person.champs %}
-			<img data-champ="{{ champ }}" class="champ">
+			<div>
+				<span>{{ champ }}</span>
+				<img data-champ="{{ champ }}" class="champ">
+			</div>
 		{% endfor %}
 		</div>
 	</div>
